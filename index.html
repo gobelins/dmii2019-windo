@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Windō</title>
+    <link rel="stylesheet" href="public/css/main.css">
+</head>
+<body>
+
+    <div id="loader">
+        <img src="/public/media/loader.gif" alt="">
+        <div class="percent"></div>
+    </div>
+    <nav>
+        <button class="mute">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <button class="about-button">
+           <div>
+                <span class="open">about</span>
+                <span class="close">fermer</span>
+           </div>
+        </button>
+    </nav>
+
+    <div class="about">
+
+        <div class="logo">
+            <a href="https://www.gobelins.fr/formation/mdi-design-et-management-de-l-innovation-interactive-cycle-2-lead-technique-ou-lead" target="_blank"><img src="public/media/logo/logo-gobelins.svg" alt=""></a>
+            <a href="http://www.asterios.fr/fr" target="_blank"><img src="public/media/logo/logo-asterios.svg" alt=""></a>
+            <a href="http://www.jardin-imparfait.fr/" target="_blank"><img src="public/media/logo/logo-jardin-imparfait.svg" alt=""></a>
+
+            <div class="cross">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.8 13.8"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;}</style></defs><title>cross</title><g id="Calque_2" data-name="Calque 2"><g id="TIMELINE"><line class="cls-1" x1="0.35" y1="0.35" x2="13.45" y2="13.45"/><line class="cls-1" x1="0.35" y1="13.45" x2="13.45" y2="0.35"/></g></g></svg>
+            
+            </div>
+        </div>
+
+        <div class="sublogo">
+            <img src="public/media/logo/logo-windo.svg" alt="">
+        </div>
+
+        <ul class="social">
+            <li><a href="http://jardin-imparfait.ivandaum.fr" target="_blank"><img src="/public/media/social/social-link.svg" alt=""></a></li>
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://jardin-imparfait.ivandaum.fr"><img src="/public/media/social/social-facebook.svg" alt=""></a></li>
+            <li><a href="https://twitter.com/intent/tweet?text=http://jardin-imparfait.ivandaum.fr"><img src="/public/media/social/social-twitter.svg" alt=""></a></li>
+            <!-- <li><a href=""><img src="/public/media/social/social-pinterest.svg" alt=""></a></li> -->
+        </ul>
+        <p class="brief">
+                Windō est une expérience en WebGL conçue par des étudiants en Design et management de l'innovation interactive à Gobelins pour Asterios Spectacles qui permet d’explorer leurs artistes au travers de fenêtres. Chaque artiste possède un espace propre dans lequel il fait vivre son univers sonore.
+        </p>
+
+        <div class="authors">
+            <ul>
+                <li class="title">Design</li>
+                <li>Axelle Pasquier</li>
+                <li>Eloi Raharinosy</li>
+            </ul>
+            <ul>
+                <li class="title">Développement</li>
+                <li>Ivan Daum</li>
+                <li>Romain Demongivert</li>
+            </ul>
+            <ul>
+                <li class="title">Sound design</li>
+                <li>Anna Cordonnier</li>
+            </ul>
+        </div>
+    </div>
+    <div class="home">
+        <div>
+            <!-- <div class="sponsored">
+                <img src="public/media/logo/logo-jardin-imparfait.svg" alt="">
+                <img src="public/media/logo/logo-asterios.svg" alt="">
+            </div> -->
+            <!-- <p>présentent</p> -->
+            <div class="sublogo">
+
+                <div class="fade-in"></div>
+                <div class="fade-out"></div>
+                <!-- <img class="fade-in" src="/public/media/logo/fade-in.gif" alt="">
+                <img class="fade-out" src="/public/media/logo/fade-out.gif" alt=""> -->
+            </div>
+            <p>Explorez le paysage sonore d’Asterios et découvrez les univers de ses différents artistes en tournée.</p>
+            <div class="indication">
+                <span>scroLl</span>
+                <span>scroLl</span>
+            </div>
+        </div>
+    </div>
+    <canvas id='mouse'></canvas>
+    <div id="ui">
+        <div class="timeline-trigger">
+            <div class="illu"><span>A</span><span>Z</span></div>
+            <button class="close-timeline">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.8 13.8"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;}</style></defs><title>cross</title><g id="Calque_2" data-name="Calque 2"><g id="TIMELINE"><line class="cls-1" x1="0.35" y1="0.35" x2="13.45" y2="13.45"/><line class="cls-1" x1="0.35" y1="13.45" x2="13.45" y2="0.35"/></g></g></svg>
+            </button>
+        </div>
+        <ul class="timeline"></ul>
+
+        <section class="artists-informations"></section>
+    </div>
+    <div id="scene"></div>
+    <script src="public/js/main.js"></script>
+</body>
+</html>
